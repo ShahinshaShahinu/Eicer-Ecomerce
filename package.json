@@ -1,6 +1,6 @@
 {
   "name": "e-commerce",
-  "version": "0.0.0",
+  "version": "2",
   "private": true,
   "scripts": {
     "start": "nodemon ./bin/www"
