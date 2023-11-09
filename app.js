@@ -19,14 +19,14 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "hbs");
 
 //engine path setted to partial
-// app.engine(
-//   "hbs",
-//   hbs.engine({
-//     extname: "hbs",
-//     layoutsDir: __dirname + "/views/layout",
-//     partialsDir: __dirname + "/views/partial",
-//   })
-// );
+app.engine(
+  "hbs",
+  hbs.engine({
+    extname: "hbs",
+    layoutsDir: __dirname + "/views/layout",
+    partialsDir: __dirname + "/views/partial",
+  })
+);
 
 hb.handlebars.registerHelper("eq", function (a, b) {
   return a == b;
