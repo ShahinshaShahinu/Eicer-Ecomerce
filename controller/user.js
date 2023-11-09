@@ -2,20 +2,17 @@ const userData = require('../model/userModel').userCollection
 const productData = require('../model/ProductsModule').ProductCollection
 const { ObjectId } = require('mongodb');
 const nodemailer = require('nodemailer');
-const { response } = require('../app');
 const { v4: uuidv4 } = require('uuid')
 const bcrypt = require('bcrypt')
 const categoryData = require('../model/CategoryModel');
 const wishlistData = require('../model/wishlistModel').UserwishlistData
-const session = require('express-session');
 const CartData = require('../model/CartModel').UserCartDatas
 const UserAddress = require('../model/UserAddressModel').UserAddress
 const userorders = require('../model/OrdersModel').userordersCollection
 const banners = require('../model/BannerModel').bannersCollection
 const Coupons = require('../model/adminCouponModel').CouponsCollection
 const Razorpay = require('razorpay');
-const async = require('hbs/lib/async');
-const { log } = require('console');
+
 
 require('dotenv').config()
 console.log(process.env.KEY_ID);
