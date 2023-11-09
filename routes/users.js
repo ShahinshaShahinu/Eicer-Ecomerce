@@ -1,8 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const userData = require('../model/userModel').userCollection
 var nocache=require('nocache');
-const { Redirect, Pay } = require('twilio/lib/twiml/VoiceResponse');
 const gethome = require('../controller/user')
 const sessions=require('../Middleware/session')
 
